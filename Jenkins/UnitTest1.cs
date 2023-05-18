@@ -14,6 +14,7 @@ namespace Jenkins
         {
             IWebDriver driver = new ChromeDriver();
             Thread.Sleep(5000);
+            driver.Url = "https://demo.actitime.com/login.do";
             driver.Quit();
         }
     }
